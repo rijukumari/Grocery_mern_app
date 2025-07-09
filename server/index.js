@@ -1,15 +1,15 @@
 import express from "express";
 import dotenv from "dotenv";
-import connectDB from "./db/conn.js";
+import connectDB from "./src/db/conn.js";
 import cors from "cors";
 import cookieParser from "cookie-parser";
-import userRouter from "./routes/user.routes.js";
-import sellerRouter from "./routes/seller.route.js";
-import productRouter from "./routes/product.route.js";
-import cartRouter from "./routes/cart.route.js";
-import orderRouter from "./routes/order.route.js";
-import addressRouter from "./routes/address.route.js";
-import { connectCloudinary } from "./db/cloudinary.js";
+import userRouter from "./src/routes/user.routes.js";
+import sellerRouter from "./src/routes/seller.route.js";
+import productRouter from "./src/routes/product.route.js";
+import cartRouter from "./src/routes/cart.route.js";
+import orderRouter from "./src/routes/order.route.js";
+import addressRouter from "./src/routes/address.route.js";
+import { connectCloudinary } from "./src/db/cloudinary.js";
 
 const app = express();
 dotenv.config();
